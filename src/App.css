@@ -1,0 +1,134 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+
+/* Colors Palette */
+/*
+#181818
+#333532
+#f5cb5b
+#fffffd
+#ccd2ce
+*/
+
+#root {
+  font-family: "Rajdhani", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  font-weight: 600;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+}
+.image-size {
+  display: flex;
+  max-width: 200px;
+  align-self: center;
+}
+
+.logo {
+  height: 4em;
+  padding: 1em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 1em #f5cb5b);
+  animation-name: logo-spin;
+  animation-duration: 600ms;
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 1em #f5cb5b);
+  transform: rotate(360deg);
+}
+
+.field-text {
+  font-family: "Raleway", sans-serif;
+  margin: 30px 0px 30px 0px;
+  font-size: 38px;
+}
+footer {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.card {
+  z-index: 1;
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+div.card-container {
+  position: fixed;
+  max-width: 120%;
+  max-height: 120%;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.card-container::before {
+  content: "";
+  background-image: conic-gradient(#f5cb5b 20deg, transparent 120deg);
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  animation: rotate 2s linear infinite;
+}
+div.card-container::after {
+  content: "";
+  width: 98%;
+  height: 98.5%;
+  background: #101010;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  letter-spacing: 5px;
+  box-shadow: inset 20px 20px 20px #0000008c;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
