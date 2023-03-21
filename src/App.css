@@ -8,7 +8,6 @@
 #333532
 #f5cb5b
 #fffffd
-#ccd2ce
 */
 
 #root {
@@ -30,16 +29,17 @@
 }
 .image-size {
   display: flex;
-  max-width: 200px;
+  max-width: 160px;
   align-self: center;
 }
 
-.logo {
+.logo.Button {
   height: 4em;
   padding: 1em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 1em #f5cb5b);
   animation-name: logo-spin;
@@ -68,6 +68,7 @@ footer {
 
 .card {
   z-index: 1;
+  margin-top: 0px;
   padding: 2em;
 }
 
@@ -76,9 +77,9 @@ footer {
 }
 
 div.card-container {
-  position: fixed;
   max-width: 120%;
   max-height: 120%;
+  margin-top: 50px;
   box-shadow: 16px 14px 20px #0000008c;
   border-radius: 10px;
   position: relative;
@@ -98,7 +99,7 @@ div.card-container::before {
 div.card-container::after {
   content: "";
   width: 98%;
-  height: 98.5%;
+  height: 98%;
   background: #101010;
   position: absolute;
   border-radius: 10px;
@@ -109,6 +110,25 @@ div.card-container::after {
   letter-spacing: 5px;
   box-shadow: inset 20px 20px 20px #0000008c;
 }
+
+@keyframes down {
+  0% {
+    transform: translateY(-120%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-120%);
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -125,6 +145,20 @@ div.card-container::after {
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+button:hover {
+  animation: pulse 1s infinite;
+  border: 1px solid #fffffd;
 }
 
 @media (prefers-reduced-motion: no-preference) {

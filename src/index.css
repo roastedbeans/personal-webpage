@@ -36,7 +36,7 @@ h1 {
 }
 
 button {
-  border-radius: 20px;
+  border-radius: 10px;
   border: 1px solid #f5cb5b;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -46,9 +46,7 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #fffffd;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

@@ -13,17 +13,17 @@ export const Profile = () => {
 const Name = () => {
   return (
     <>
-      <h1 class="field-text">VINCENT D. ABELLA</h1>
+      <h1 className="field-text select-none">VINCENT D. ABELLA</h1>
     </>
   );
 };
 
 const Image = () => {
   return (
-    <div class="mt-6 image-container">
-      <div class="image-size">
+    <div className="mt-6 image-container">
+      <div className="image-size">
         <img
-          class="object-scale-down"
+          className="object-scale-down"
           src="/src/assets/profile-image.png"></img>
       </div>
     </div>

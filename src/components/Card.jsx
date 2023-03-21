@@ -7,7 +7,7 @@ export const Card = () => {
     <>
       <Profile />
       <PortfolioButton />
-      <h2 class="mt-6">Where to find me on the web</h2>
+      <h2 className="mt-6 select-none">Where to find me on the web</h2>
       <ButtonList />
     </>
   );
