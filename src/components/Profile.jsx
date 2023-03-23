@@ -23,7 +23,7 @@ const Image = () => {
       <div className="image-size">
         <img
           className="object-scale-down"
-          src="/src/assets/profile-image.png"></img>
+          src="public\assets\profile-image.png"></img>
       </div>
     </div>
   );
