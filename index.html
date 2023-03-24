@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="public\assets\VA-Logo.svg" />
+    <link rel="icon" type="image/svg+xml+png" href="src/assets/VA-Logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link rel="stylesheet" media="screen" href="/src/index.css" />
     <title>Vinch Outside Walls</title>
     <style>
       html,
@@ -21,11 +23,20 @@
     </style>
   </head>
   <body>
-    <script type="module" src="/src/index.jsx"></script>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+    <!-- stats - count particles -->
+    <div class="count-particles">
+      <span class="js-count-particles"></span>
+    </div>
+
     <canvas class="background"></canvas>
     <div id="root"></div>
 
-    <script type="module" src="/src/components/BgParticle.jsx"></script>
-    <script src="/src/dist/particles.min.js"></script>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="src/dist/particles.js"></script>
+    <script src="src/dist/BgParticle.js"></script>
+
+    <script type="module" src="/src/index.jsx"></script>
   </body>
 </html>

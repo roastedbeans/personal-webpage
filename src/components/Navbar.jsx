@@ -1,5 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import Icon from "../assets/VA-Logo.svg";
+import BtnHover from "../assets/ButtonHover.svg";
 
 export const Navbar = () => {
   const [hover1, setHover1] = useState(false);
@@ -30,7 +32,7 @@ export const Navbar = () => {
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <a href="#" className="flex items-center z-10">
           <img
-            src="public\assets\VA-Logo.svg"
+            src={Icon}
             className="h-10 mr-3 sm:h-10 fixed top-2 left-2 logo"
           />
         </a>
@@ -49,7 +51,7 @@ export const Navbar = () => {
               transform: hover1 ? "translateY(0)" : "translateY(-120%)",
             }}
             className="h-16 sm:h-16 translate-y-[-120%]"
-            src="public\assets\ButtonHover.svg"></img>
+            src={BtnHover}></img>
           <div></div>
         </li>
         <li onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2}>
@@ -65,7 +67,7 @@ export const Navbar = () => {
               transform: hover2 ? "translateY(0)" : "translateY(-120%)",
             }}
             className="h-16 sm:h-16 translate-y-[-120%]"
-            src="public\assets\ButtonHover.svg"></img>
+            src={BtnHover}></img>
         </li>
         <li onMouseEnter={onMouseEnter3} onMouseLeave={onMouseLeave3}>
           <a
@@ -79,7 +81,7 @@ export const Navbar = () => {
               transform: hover3 ? "translateY(0)" : "translateY(-120%)",
             }}
             className="h-16 sm:h-16 translate-y-[-120%]"
-            src="public\assets\ButtonHover.svg"></img>
+            src={BtnHover}></img>
         </li>
       </ul>
     </nav>
