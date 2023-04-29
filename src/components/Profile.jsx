@@ -20,8 +20,8 @@ const Name = () => {
 
 const Image = () => {
   return (
-    <div className="mt-6 image-container">
-      <div className="image-size">
+    <div className="mt-4 image-container">
+      <div className="overflow-hidden image-size bg-gradient-to-b from-[#f5cb5b] to-[#fffffd] rounded-full">
         <img className="object-scale-down" src={ProPic}></img>
       </div>
     </div>

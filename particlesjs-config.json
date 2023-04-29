@@ -14,7 +14,7 @@
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#000000"
+        "color": "#f5cb5b"
       },
       "polygon": {
         "nb_sides": 5
@@ -47,7 +47,7 @@
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
+      "distance": 80,
       "color": "#f5cb5b",
       "opacity": 0.3038784486205519,
       "width": 1
@@ -82,13 +82,13 @@
     },
     "modes": {
       "grab": {
-        "distance": 400,
+        "distance": 200,
         "line_linked": {
           "opacity": 1
         }
       },
       "bubble": {
-        "distance": 400,
+        "distance": 200,
         "size": 40,
         "duration": 2,
         "opacity": 8,
@@ -99,7 +99,7 @@
         "duration": 0.4
       },
       "push": {
-        "particles_nb": 4
+        "particles_nb": 2
       },
       "remove": {
         "particles_nb": 2
